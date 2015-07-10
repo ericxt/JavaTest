@@ -7,21 +7,26 @@ public class LongestConsecutiveSequence {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] array = { 1, 3, 5, 9, 7 };
-		long startTime = System.nanoTime();
-		for (int i = 0; i < 10000; i++) {
-			LongestSequence(array);
-		}
-		long endTime = System.nanoTime();
-		System.out.println("LongestSequence        >>> cost time : "
-				+ (endTime - startTime));
-		startTime = System.nanoTime();
-		for (int i = 0; i < 10000; i++) {
-			LongestSequenceWithMap(array);
-		}
-		endTime = System.nanoTime();
-		System.out.println("LongestSequenceWithMap >>> cost time : "
-				+ (endTime - startTime));
+		int[] array = { 1, 3, 5, 9, 7, 2 };
+		
+		int longestSequence = LongestSequence(array);
+		System.out.println(longestSequence);
+		
+//		long startTime = System.nanoTime();
+//		for (int i = 0; i < 10000; i++) {
+//			LongestSequence(array);
+//		}
+//		long endTime = System.nanoTime();
+//		System.out.println("LongestSequence        >>> cost time : "
+//				+ (endTime - startTime));
+//		
+//		startTime = System.nanoTime();
+//		for (int i = 0; i < 10000; i++) {
+//			LongestSequenceWithMap(array);
+//		}
+//		endTime = System.nanoTime();
+//		System.out.println("LongestSequenceWithMap >>> cost time : "
+//				+ (endTime - startTime));
 
 	}
 

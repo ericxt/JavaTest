@@ -1,12 +1,20 @@
 package codingInterview;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+enum testEnum {
+	red, green, black, blue;
+}
 
 public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[][] mat = new int[4][5];
-		System.out.println(mat[0].length);
+		String date = "0502";
+		
+		System.out.println(Integer.parseInt(date) % 2);
 	}
 
 }
